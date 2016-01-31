@@ -4,8 +4,8 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Gulp Asset Pipeline</title>
-  <link rel="stylesheet" href="stylesheets/global-43c24eb442.css">
+  <title>Angular D3 Demo Page  -Index Page </title>
+  <link rel="stylesheet" href="stylesheets/global-eb831845c3.css">
   <!-- http://realfavicongenerator.net/ is the best! -->
 <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
@@ -29,81 +29,57 @@
 
   
 </head>
-<body>
-  <h1>Gulp All The Things!</h1>
-  <nav>
-  <p><a href="index.html">page 1</a> <a href="page.html">page 2</a></p>
-</nav>
+<body ng-strict-di ng-app="demo" ng-cloak>
+    <div layout="row" layout-padding class="bg-dark-blue nav-dark" layout-align="space-around center" ng-controller="navigationController">
+    <img src="http://placehold.it/200x50">
+    <div>
+      <md-button class="md-primary md-raised"><a class="button-link" href="index.html">Dashboard</a></md-button>
+      <md-button class="md-primary "><a class="button-link" href="page.html">Item 1</a></md-button>
+      <md-button class="md-primary">Item 2</md-button>
+      <md-menu>
+        <md-button md-menu-origin ng-click="$mdOpenMenu()">Help</md-button>
+        <md-menu-content width="2">
+          <md-menu-item>
+            <md-button>Help</md-button>
+          </md-menu-item>
+          <md-menu-item>
+            <md-button>About</md-button>
+          </md-menu-item>
+        </md-menu-content>
+      </md-menu>
+    </div>
+    <div class="nav-buttons">
+      <md-button class="md-raised md-accent">My profile</md-button>
+      <md-button class="md-raised md-warn">Log Out</md-button>
+    </div>
+    <ng-md-icon icon="person" size="48"></ng-md-icon>
+  </div>
+  <!--<p><a href="index.html">page 1</a> <a href="page.html">page 2</a></p>-->
 
   
-  <img src="images/gulp-743c01b886.png" alt="gulp.js">
-  <h4>Ubiquitous Social Icons!</h4>
-  <p class="social-icons">
-  As an icon font...
+  <div>
+    <div layout="row" class="md-whiteframe-1dp demo-container">
+    This is timeline
+</div>
+    <div layout="row" class="md-whiteframe-1dp demo-container">
+    This is Summary.
+</div>
+    <div layout="column">
 
-  
-    <a class="icon -twitter" href="https://twitter.com/viget">
-      <span class="screenreader">Twitter</span>
-    </a>
-  
-    <a class="icon -facebook" href="https://www.facebook.com/vigetlabs">
-      <span class="screenreader">Facebook</span>
-    </a>
-  
-    <a class="icon -instagram" href="https://instagram.com/viget">
-      <span class="screenreader">Instagram</span>
-    </a>
-  
-</p>
-
-  
-<p class="social-icons">
-
-  
-    <a href="https://twitter.com/viget">
-      
-  
-  <span class='sprite -twitter '>
-    <svg viewBox="0 0 1 1"><use xlink:href='images/sprites-0325b3f89a.svg#twitter' /></use></svg>
-  </span>
-
-    </a>
-  
-    <a href="https://www.facebook.com/vigetlabs">
-      
-  
-  <span class='sprite -facebook '>
-    <svg viewBox="0 0 1 1"><use xlink:href='images/sprites-0325b3f89a.svg#facebook' /></use></svg>
-  </span>
-
-    </a>
-  
-    <a href="https://instagram.com/viget">
-      
-  
-  <span class='sprite -instagram '>
-    <svg viewBox="0 0 1 1"><use xlink:href='images/sprites-0325b3f89a.svg#instagram' /></use></svg>
-  </span>
-
-    </a>
-  
-    ...or svg sprites!
-</p>
-
-  <button id="button">Manually Load Async Module</button>
-  <p data-module="Highlight">An auto-loaded async module highlighted this!</p>
+    </div>
+  </div>
 
   <footer>
-    <p>Made with ♥ at <br><a href="http://viget.com">
+    <p>Jun Wang ♥ at <a href="https://www.linkedin.com/in/junwangjiang">
   
-  <span class='sprite -viget '>
-    <svg viewBox="0 0 500 182"><use xlink:href='images/sprites-0325b3f89a.svg#viget' /></use></svg>
+  <span class='sprite -linkedin '>
+    <svg viewBox="0 0 50 50"><use xlink:href='images/sprites-c78e434f76.svg#linkedin' /></use></svg>
   </span>
 </a></p>
   </footer>
-  <script src="javascripts/shared-69646905a5d447def8ae.js"></script>
+  <script src="javascripts/shared-d2e4a80477c2115b51cd.js"></script>
   
-<script src="javascripts/app-69646905a5d447def8ae.js"></script>
+<script src="javascripts/app-d2e4a80477c2115b51cd.js"></script>
 
 </body>
 </html>

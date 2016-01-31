@@ -16,9 +16,9 @@
   "fonts/icons.woff2": "fonts/icons-d3d53d542e.woff2",
   "images/gulp-starter-logo.png": "images/gulp-starter-logo-d34866d991.png",
   "images/gulp.png": "images/gulp-743c01b886.png",
-  "images/sprites.svg": "images/sprites-0325b3f89a.svg",
-  "javascripts/app.js": "javascripts/app-69646905a5d447def8ae.js",
-  "javascripts/page.js": "javascripts/page-69646905a5d447def8ae.js",
-  "javascripts/shared.js": "javascripts/shared-69646905a5d447def8ae.js",
-  "stylesheets/global.css": "stylesheets/global-43c24eb442.css"
+  "images/sprites.svg": "images/sprites-c78e434f76.svg",
+  "javascripts/app.js": "javascripts/app-d2e4a80477c2115b51cd.js",
+  "javascripts/page.js": "javascripts/page-d2e4a80477c2115b51cd.js",
+  "javascripts/shared.js": "javascripts/shared-d2e4a80477c2115b51cd.js",
+  "stylesheets/global.css": "stylesheets/global-eb831845c3.css"
 }
