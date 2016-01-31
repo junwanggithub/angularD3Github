@@ -1,5 +1,6 @@
 import './asyncModules'
 import exclaimify from './exclaimify'
+import demoModule from './angular-bootstrap'
 
 const button = document.getElementById('button')
 
@@ -16,4 +17,6 @@ console.log(`
     images/gulp.png
   get updated in js too!`)
 
-button.addEventListener('click', alertAsyncMessage)
+demoModule.run(["$log",($log) => {
+  $log.info('demo running');
+}])

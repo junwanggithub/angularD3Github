@@ -3,16 +3,17 @@
   Homepage: https://mozilla.github.io/nunjucks/
   Docs: https://mozilla.github.io/nunjucks/api.html
 #}
-
+{% set activeItem = "index" %}
 {% extends 'layouts/application.html' %}
-
+{% block subtitle %} -Index Page {% endblock %}
 {% block content %}
-  <img src="images/gulp.png" alt="gulp.js">
-  <h4>Ubiquitous Social Icons!</h4>
-  {% include "shared/social-icons-font.html" %}
-  {% include "shared/social-icons-svg.html" %}
-  <button id="button">Manually Load Async Module</button>
-  <p data-module="Highlight">An auto-loaded async module highlighted this!</p>
+  <div>
+    {% include "components/dashboard/timeline.html" %}
+    {% include "components/dashboard/summary.html" %}
+    <div layout="column">
+
+    </div>
+  </div>
 {% endblock %}
 
 {% block javascript %}

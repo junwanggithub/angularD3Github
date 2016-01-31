@@ -1,3 +1,25 @@
-<nav>
-  <p><a href="index.html">page 1</a> <a href="page.html">page 2</a></p>
-</nav>
+  <div layout="row" layout-padding class="bg-dark-blue nav-dark" layout-align="space-around center" ng-controller="navigationController">
+    <img src="http://placehold.it/200x50">
+    <div>
+      <md-button class="md-primary {% if activeItem == "index" %}md-raised{% endif %}"><a class="button-link" href="index.html">Dashboard</a></md-button>
+      <md-button class="md-primary {% if activeItem == "page" %}md-raised{% endif %}"><a class="button-link" href="page.html">Item 1</a></md-button>
+      <md-button class="md-primary">Item 2</md-button>
+      <md-menu>
+        <md-button md-menu-origin ng-click="$mdOpenMenu()">Help</md-button>
+        <md-menu-content width="2">
+          <md-menu-item>
+            <md-button>Help</md-button>
+          </md-menu-item>
+          <md-menu-item>
+            <md-button>About</md-button>
+          </md-menu-item>
+        </md-menu-content>
+      </md-menu>
+    </div>
+    <div class="nav-buttons">
+      <md-button class="md-raised md-accent">My profile</md-button>
+      <md-button class="md-raised md-warn">Log Out</md-button>
+    </div>
+    <ng-md-icon icon="person" size="48"></ng-md-icon>
+  </div>
+  <!--<p><a href="index.html">page 1</a> <a href="page.html">page 2</a></p>-->

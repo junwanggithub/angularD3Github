@@ -27,6 +27,10 @@ module.exports = function(env) {
           test: /\.js$/,
           loader: 'babel-loader?stage=1',
           exclude: /node_modules/
+        },
+        {
+          test: /\.css$/,
+          loader: "style-loader!css-loader"
         }
       ]
     }

@@ -4,17 +4,16 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>{% block title %}Gulp Asset Pipeline{% endblock %}</title>
+  <title>Angular D3 Demo Page {% block subtitle %}{% endblock %}</title>
   <link rel="stylesheet" href="stylesheets/global.css">
   {% include "shared/app-icons.html" %}
   {% block head %}{% endblock %}
 </head>
-<body>
-  <h1>Gulp All The Things!</h1>
+<body ng-strict-di ng-app="demo" ng-cloak>
   {% include "shared/page-nav.html" %}
   {% block content %}{% endblock %}
   <footer>
-    <p>Made with ♥ at <br><a href="http://viget.com">{{sprite('viget', '0 0 500 182')}}</a></p>
+    <p>Jun Wang ♥ at <a href="https://www.linkedin.com/in/junwangjiang">{{sprite('linkedin', '0 0 50 50')}}</a></p>
   </footer>
   <script src="javascripts/shared.js"></script>
   {% block javascript %}{% endblock %}
