@@ -1,6 +1,7 @@
 import './asyncModules'
 import exclaimify from './exclaimify'
-import demoModule from './angular-bootstrap'
+import bootStrapObj from './angular-bootstrap'
+import timeline from './components/dashboard/timeline.js'
 
 const button = document.getElementById('button')
 
@@ -12,11 +13,10 @@ const alertAsyncMessage = function() {
   })
 }
 
-console.log(`
-  asset references like this one:
-    images/gulp.png
-  get updated in js too!`)
+var appModule = bootStrapObj.init([
+  timeline
+]);
 
-demoModule.run(["$log",($log) => {
+appModule.run(["$log",($log) => {
   $log.info('demo running');
 }])

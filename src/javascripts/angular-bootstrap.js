@@ -11,23 +11,33 @@ import angularUIRouter from 'angular-ui-router';
 //Icons
 import angularMaterialIcons from 'angular-material-icons';
 //Controllers
-import NavigationController from './controllers/NavigationController.js'
+import navigationController from './controllers/navigationController'
+//Filters
+import filterModule from './filters/filterModules'
+
+var init = function(customizedModules){
+    "use strict";
+    customizedModules = customizedModules || [];
+    var dependenciesModules = bootStrapObj.sharedModules.concat(customizedModules)
+    return angular.module('demo', dependenciesModules)
+        .config(['$mdThemingProvider', function($mdThemingProvider) {
+            $mdThemingProvider.theme('default')
+                .primaryPalette('blue')
+                .accentPalette('orange');
+        }])
+        .controller('navigationController',['$scope', navigationController]);
+}
+
+var bootStrapObj = {
+    appModuleName: 'demo',
+    init: init,
+    sharedModules: [
+        angularMaterial,
+        angularUIRouter,
+        angularMaterialIcons,
+        filterModule]
+}
 
 
-// Create our demo module
 
-var demoModule = angular.module('demo', [
-    angularMaterial,
-    angularUIRouter,
-    angularMaterialIcons
-])
-.config(['$mdThemingProvider', function($mdThemingProvider) {
-    $mdThemingProvider.theme('default')
-        .primaryPalette('blue')
-        .accentPalette('orange');
-}])
-.controller('navigationController',['$scope', NavigationController]);
-
-
-
-export default demoModule;
+export default bootStrapObj;

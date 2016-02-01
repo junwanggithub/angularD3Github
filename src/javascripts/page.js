@@ -1,4 +1,9 @@
 import exclaimify from './exclaimify'
-import './angular-bootstrap'
+import bootStrapObj from './angular-bootstrap'
 
-console.log(exclaimify('page2.js loaded'))
+var appModule = bootStrapObj.init([
+]);
+
+appModule.run(["$log",($log) => {
+    $log.info('page2.js loaded');
+}])
