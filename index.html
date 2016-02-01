@@ -6,6 +6,9 @@
   <meta charset="utf-8">
   <title>Angular D3 Demo Page  -Index Page </title>
   <link rel="stylesheet" href="stylesheets/global-eb831845c3.css">
+  
+  <link rel="stylesheet" href="stylesheets/index-13caa3cdba.css">
+
   <!-- http://realfavicongenerator.net/ is the best! -->
 <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
@@ -34,8 +37,7 @@
     <img src="http://placehold.it/200x50">
     <div>
       <md-button class="md-primary md-raised"><a class="button-link" href="index.html">Dashboard</a></md-button>
-      <md-button class="md-primary "><a class="button-link" href="page.html">Item 1</a></md-button>
-      <md-button class="md-primary">Item 2</md-button>
+      <md-button class="md-primary "><a class="button-link" href="page.html">D3 Components</a></md-button>
       <md-menu>
         <md-button md-menu-origin ng-click="$mdOpenMenu()">Help</md-button>
         <md-menu-content width="2">
@@ -58,8 +60,13 @@
 
   
   <div>
-    <div layout="row" class="md-whiteframe-1dp demo-container">
-    This is timeline
+    
+<div layout="column" class="md-whiteframe-1dp demo-container" ng-controller="timelineController">
+    <h4 >This is timeline page 1.{{name}}{{data}}</h4>
+    <div>
+        <timeline></timeline>
+    </div>
+
 </div>
     <div layout="row" class="md-whiteframe-1dp demo-container">
     This is Summary.
@@ -70,16 +77,11 @@
   </div>
 
   <footer>
-    <p>Jun Wang ♥ at <a href="https://www.linkedin.com/in/junwangjiang">
-  
-  <span class='sprite -linkedin '>
-    <svg viewBox="0 0 50 50"><use xlink:href='images/sprites-c78e434f76.svg#linkedin' /></use></svg>
-  </span>
-</a></p>
+    <p>Jun Wang ♥ at <a href="https://www.linkedin.com/in/junwangjiang">{{sprite('linkedin', '0 0 50 50')}}</a></p>
   </footer>
-  <script src="javascripts/shared-d2e4a80477c2115b51cd.js"></script>
+  <script src="javascripts/shared-e444eff229ca62df29ed.js"></script>
   
-<script src="javascripts/app-d2e4a80477c2115b51cd.js"></script>
+<script src="javascripts/app-e444eff229ca62df29ed.js"></script>
 
 </body>
 </html>
