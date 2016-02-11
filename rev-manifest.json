@@ -17,9 +17,11 @@
   "images/gulp-starter-logo.png": "images/gulp-starter-logo-d34866d991.png",
   "images/gulp.png": "images/gulp-743c01b886.png",
   "images/sprites.svg": "images/sprites-c78e434f76.svg",
-  "javascripts/app.js": "javascripts/app-e444eff229ca62df29ed.js",
-  "javascripts/page.js": "javascripts/page-e444eff229ca62df29ed.js",
-  "javascripts/shared.js": "javascripts/shared-e444eff229ca62df29ed.js",
+  "javascripts/app.js": "javascripts/app-11bd75467451db0bc28b.js",
+  "javascripts/highchart-index.js": "javascripts/highchart-index-11bd75467451db0bc28b.js",
+  "javascripts/page.js": "javascripts/page-11bd75467451db0bc28b.js",
+  "javascripts/shared.js": "javascripts/shared-11bd75467451db0bc28b.js",
   "stylesheets/global.css": "stylesheets/global-eb831845c3.css",
+  "stylesheets/highchart.css": "stylesheets/highchart-a516c6159a.css",
   "stylesheets/index.css": "stylesheets/index-13caa3cdba.css"
 }

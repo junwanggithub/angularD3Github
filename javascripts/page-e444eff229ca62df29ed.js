@@ -1,1 +1,0 @@
-webpackJsonp([3],{0:function(n,t,e){n.exports=e(27)},27:function(n,t,e){"use strict";function o(n){return n&&n.__esModule?n:{"default":n}}var u=e(5),i=(o(u),e(6)),f=o(i),a=f["default"].init([]);a.run(["$log",function(n){n.info("page2.js loaded")}])}});

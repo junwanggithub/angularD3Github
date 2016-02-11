@@ -7,6 +7,8 @@
   <title>Angular D3 Demo Page  -Second Page </title>
   <link rel="stylesheet" href="stylesheets/global-eb831845c3.css">
   
+<link rel="stylesheet" href="stylesheets/highchart-a516c6159a.css">
+
   <!-- http://realfavicongenerator.net/ is the best! -->
 <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
@@ -35,8 +37,8 @@
     <img src="http://placehold.it/200x50">
     <div>
       <md-button class="md-primary "><a class="button-link" href="index.html">Dashboard</a></md-button>
-      <md-button class="md-primary "><a class="button-link" href="highchart.html">Highchart</a></md-button>
-      <md-button class="md-primary md-raised"><a class="button-link" href="page.html">D3 Components</a></md-button>
+      <md-button class="md-primary md-raised"><a class="button-link" href="highchart.html">Highchart</a></md-button>
+      <md-button class="md-primary "><a class="button-link" href="page.html">D3 Components</a></md-button>
       <md-menu>
         <md-button md-menu-origin ng-click="$mdOpenMenu()">Help</md-button>
         <md-menu-content width="2">
@@ -58,14 +60,19 @@
   <!--<p><a href="index.html">page 1</a> <a href="page.html">page 2</a></p>-->
 
   
-  I am page 2.
+  <h3>Highchart Demo Page</h3>
+<div ng-controller="linechartController" style="padding:50px;" class="timeline-chart">
+  <highchart id="chart1" config="chartConfig" class="span10" style="padding:10px;"></highchart>
+</div>
+
 
   <footer>
     <p>Jun Wang ♥ at <a href="https://www.linkedin.com/in/junwangjiang">{{sprite('linkedin', '0 0 50 50')}}</a></p>
   </footer>
   <script src="javascripts/shared-11bd75467451db0bc28b.js"></script>
   
-<script src="javascripts/page-11bd75467451db0bc28b.js"></script>
+<script src="http://code.highcharts.com/stock/highstock.src.js"></script>
+<script src="javascripts/highchart-index-11bd75467451db0bc28b.js"></script>
 
 </body>
 </html>
