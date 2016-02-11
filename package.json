@@ -27,7 +27,10 @@
     "angular-material-icons": "^0.6.0",
     "angular-ui-router": "^0.2.17",
     "d3": "^3.5.14",
-    "font-awesome": "^4.5.0"
+    "font-awesome": "^4.5.0",
+    "highcharts": "^4.2.1",
+    "highcharts-ng": "0.0.11",
+    "jquery": "^2.2.0"
   },
   "devDependencies": {
     "babel-core": "^5.8.3",

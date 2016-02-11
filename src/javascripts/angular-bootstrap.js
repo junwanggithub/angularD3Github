@@ -1,4 +1,3 @@
-// Import angular
 import 'angular/angular.js';
 // Material design css
 import 'angular-material/angular-material.css';

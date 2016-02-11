@@ -1,0 +1,18 @@
+{% set activeItem = "highchart" %}
+{% extends 'layouts/application.html' %}
+{% block linkblock %}
+<link rel="stylesheet" href="stylesheets/highchart.css">
+{% endblock %}
+{% block subtitle %} -Second Page {% endblock %}
+{% block content %}
+  <h3>Highchart Demo Page</h3>
+<div ng-controller="linechartController" style="padding:50px;" class="timeline-chart">
+  <highchart id="chart1" config="chartConfig" class="span10" style="padding:10px;"></highchart>
+</div>
+
+{% endblock %}
+
+{% block javascript %}
+<script src="http://code.highcharts.com/stock/highstock.src.js"></script>
+<script src="javascripts/highchart-index.js"></script>
+{% endblock %}

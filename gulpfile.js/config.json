@@ -22,7 +22,8 @@
       "extractSharedJs": true,
       "entries": {
         "app": ["./app.js"],
-        "page": ["./page.js"]
+        "page": ["./page.js"],
+        "highchart-index": ["./highchart-index.js"]
       },
       "extensions": ["js"]
     },

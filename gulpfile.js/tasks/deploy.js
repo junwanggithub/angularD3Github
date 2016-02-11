@@ -11,7 +11,7 @@ var settings = {
   src: path.join(config.root.dest, '/**/*'),
   ghPages: {
     cacheDir: path.join(os.tmpdir(), package.name),
-    remoteUrl: 'https://96037761e8370794b2707f7c1dae2c9f1c354f6d@github.com/junwanggithub/angularD3Github.git'
+    remoteUrl: 'https://518d6895d1f29721097e49ec66c248e2e516ae6a@github.com/junwanggithub/angularD3Github.git'
   }
 }
 
