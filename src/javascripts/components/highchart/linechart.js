@@ -28,7 +28,7 @@ angular.module(moduleName, [])
         this.data = {};
         this.getData = function(startTime, endTime){
             var deferred = $q.defer()
-            var path = './linechartData.json'
+            var path = './data/linechartData.json'
             return $http.get(path).then(function(data){
                 //this.data = data
                 return $q.when(data)
